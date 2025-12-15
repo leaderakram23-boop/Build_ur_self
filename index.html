@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المجالات</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 { text-align: center; margin-bottom: 40px; color: #333; }
+    .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; }
+    .card {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      border-radius: 15px;
+      width: 260px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+      text-decoration: none;
+    }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0,0,0,0.3); }
+    .card img { width: 100%; height: 160px; object-fit: cover; transition: transform 0.3s; }
+    .card:hover img { transform: scale(1.05); }
+    .card h2 { margin: 15px 0; font-size: 1.3em; }
+  </style>
+</head>
+<body>
+  <h1>المجالات</h1>
+  <div class="container">
+    <a href="programming.html" class="card">
+      <img src="images/8141bf8a2a5582b27cfd838857691f22.jpg" alt="البرمجة">
+      <h2>البرمجة</h2>
+    </a>
+
+    <a href="medicine.html" class="card">
+      <img src="images/887d94499c6833f9ac011334a31149fe.jpg" alt="الطب">
+      <h2>الطب</h2>
+    </a>
+  </div>
+</body>
+</html>
